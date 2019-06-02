@@ -1,0 +1,39 @@
+.navigation {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+
+  .logo {
+    background: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 200px;
+
+    .logo_image {
+      height: 36px;
+      width: 36px;
+      background: white;
+    }
+
+    .logo_name {
+      font-size: 42px;
+      margin-left: 5px;
+    }
+  }
+
+  .menu {
+    background: blue;
+    display: flex;
+    height: 100%;
+    flex: 1;
+  }
+
+  .login {
+    background: green;
+    display: flex;
+    height: 100%;
+    width: 200px;
+  }
+}

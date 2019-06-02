@@ -1,26 +1,18 @@
 @import '../variables';
 
 .app {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
 
   .header {
-    display: flex;
-    background: $background_secondary;
-    height: 50px;
+    @include general_margin;
+    position: sticky;
+    top: 0;
+    background: rgba($background_secondary, 0.75);
+    // height: 50px;
     border-bottom: 1px solid $line_secondary;
   }
 
   .content {
-    display: flex;
-    flex: 1;
+    @include general_margin;
   }
 
-  .footer {
-    display: flex;
-    background: $background_secondary;
-    height: 50px;
-    border-top: 1px solid $line_secondary;
-  }
 }

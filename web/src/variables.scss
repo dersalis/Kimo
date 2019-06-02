@@ -3,5 +3,8 @@ $background_secondary: rgb(29, 29, 29);
 
 $color_primary: rgb(238, 238, 238);
 
-
 $line_secondary: rgb(32, 32, 32);
+
+@mixin general_margin {
+  padding: 0 50px;
+}
