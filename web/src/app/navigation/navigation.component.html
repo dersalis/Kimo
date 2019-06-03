@@ -4,9 +4,20 @@
     <div class="logo_name">Kimo</div>
   </div>
   <div class="menu">
-
+    <a class="menu_item" routerLink="/start" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Start</a>
+    <a class="menu_item" routerLink="/films" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Filmy</a>
+    <a class="menu_item" routerLink="/cinemas" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Kina</a>
+    <a class="menu_item" routerLink="/pricelist" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Cennik</a>
+    <a class="menu_item" routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Kontakt</a>
+  </div>
+  <div class="search">
+      <input class="search_check" id="search_check" type="checkbox">
+      <input class="search_input" type="text" placeholder="Szukaj...">
+      <label class="material-icons search_icon" for="search_check">search</label>
   </div>
   <div class="login">
-
+      <span class="separator"></span>
+      <span class="material-icons login_icon">account_circle</span>
+      <span class="login_text">Zaloguj</span>
   </div>
 </div>

@@ -1,39 +1,189 @@
+$font_color: rgb(199, 199, 199);
+$font_color_selected: white;
+$color_selected: rgb(29, 153, 255);
+
 .navigation {
   height: 50px;
   display: flex;
   flex-direction: row;
+  color: $font_color;
 
   .logo {
-    background: red;
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 100%;
-    width: 200px;
+    // width: 200px;
 
     .logo_image {
-      height: 36px;
-      width: 36px;
-      background: white;
+      height: 32px;
+      width: 32px;
+      background: $font_color;
     }
 
     .logo_name {
-      font-size: 42px;
-      margin-left: 5px;
+      font-size: 32px;
+      margin-left: 20px;
     }
   }
 
   .menu {
-    background: blue;
     display: flex;
     height: 100%;
     flex: 1;
+    flex-direction: row;
+    justify-content: center;
+
+    .menu_item {
+      position: relative;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      padding: 0 15px 0px 15px;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $font_color;
+      text-decoration: none;
+
+      transition: color 0.3s;
+
+      &:hover {
+        color: $color_selected;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 0%;
+        background: $color_selected;
+        bottom: 0px;
+        left: 0px;
+        transform: translate(50%, 0%);
+        opacity: 0;
+
+        transition: transform 0.3s, opacity 0.3s;
+      }
+
+      &.active {
+        color: $font_color;
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 3px;
+          width: 100%;
+          background: $color_selected;
+          bottom: 0px;
+          left: 0px;
+          transform: translate(0%, 0%);
+          opacity: 1;
+        }
+
+        &:hover {
+          color: $color_selected;
+        }
+      }
+    }
   }
 
-  .login {
-    background: green;
+
+  .search {
     display: flex;
+    flex-direction: row;
     height: 100%;
     width: 200px;
+    justify-content: flex-end;
+
+    .search_check {
+      display: none;
+
+      &:checked {
+        & + .search_input {
+          width: 160px;
+          opacity: 1;
+        }
+
+        ~ .search_icon {
+          color: $color_selected;
+        }
+      }
+    }
+
+    .search_input {
+      height: 20px;
+      width: 0px;
+      margin: 12px 5px 0 0;
+      padding: 1px 4px;
+      opacity: 0;
+
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid $font_color;
+      font-size: 14px;
+      color: $font_color;
+
+      transition: border-bottom 0.3s, width .3s;
+
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid $color_selected;
+        outline: none;
+      }
+    }
+
+    .search_icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: $font_color;
+
+      transition: color 0.3s;
+
+      &:hover {
+        color: $color_selected;
+      }
+    }
+  }
+
+
+  .login {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    .separator {
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      margin: 16px 10px;
+      width: 1px;
+      height: 20px;
+      background: white;
+    }
+
+    .login_icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    }
+
+    .login_text {
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      margin-left: 5px;
+      width: 100px;
+      font-size: 14px;
+
+      transition: color .3s;
+
+      &:hover {
+        color: $color_selected;
+      }
+    }
   }
 }
