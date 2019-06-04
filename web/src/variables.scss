@@ -5,6 +5,10 @@ $color_primary: rgb(238, 238, 238);
 
 $line_secondary: rgb(32, 32, 32);
 
+$font_color: rgb(199, 199, 199);
+$font_color_selected: white;
+$color_selected: rgb(29, 153, 255);
+
 @mixin general_margin {
   padding: 0 50px;
 }

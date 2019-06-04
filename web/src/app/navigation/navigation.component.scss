@@ -1,6 +1,4 @@
-$font_color: rgb(199, 199, 199);
-$font_color_selected: white;
-$color_selected: rgb(29, 153, 255);
+@import '../../variables';
 
 .navigation {
   height: 50px;
@@ -18,12 +16,18 @@ $color_selected: rgb(29, 153, 255);
     .logo_image {
       height: 32px;
       width: 32px;
-      background: $font_color;
+
+      .material-icons {
+        font-size: 36px;
+      }
     }
 
     .logo_name {
       font-size: 32px;
-      margin-left: 20px;
+      margin-left: 12px;
+      text-transform: uppercase;
+      font-family: fantasy;
+      margin-top: 12px;
     }
   }
 
