@@ -9,6 +9,8 @@ import { FilmsComponent } from './films/films.component';
 import { CinemasComponent } from './cinemas/cinemas.component';
 import { ContactComponent } from './contact/contact.component';
 import { PricelistComponent } from './pricelist/pricelist.component';
+import { FooterComponent } from './footer/footer.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { PricelistComponent } from './pricelist/pricelist.component';
     FilmsComponent,
     CinemasComponent,
     ContactComponent,
-    PricelistComponent
+    PricelistComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

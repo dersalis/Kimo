@@ -1,0 +1,47 @@
+@import '../../variables';
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 30px 0;
+
+  .footer_content {
+    display: flex;
+    flex-direction: column;
+
+    .footer_line {
+      height: 1px;
+      background: rgb(41, 41, 41);
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .footer_text {
+      font-size: 12px;
+      color: rgb(80, 80, 80);
+    }
+
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .icon {
+        color: gray;
+        margin: 0 20px;
+        transition: color .3s;
+
+        i {
+          font-size: 20px;
+        }
+
+        &:hover {
+          color: $font_color_selected;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
