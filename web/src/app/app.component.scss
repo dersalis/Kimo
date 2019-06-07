@@ -8,6 +8,7 @@
     top: 0;
     background: rgba($background_secondary, 0.85);
     border-bottom: 1px solid $line_secondary;
+    z-index: 1;
   }
 
   .content {
