@@ -1,0 +1,5 @@
+<div class="current_films">
+    <div class="current_films_slider">
+        <app-current-films-card *ngFor="let film of films" title="{{film.title}}" type="{{film.type}}" year="{{film.year}}" poster="{{film.poster}}"></app-current-films-card>
+    </div>
+</div>

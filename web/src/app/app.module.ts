@@ -14,6 +14,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { PromisedFilmsBallComponent } from './promised-films-ball/promised-films-ball.component';
 import { PromisedFilmsComponent } from './promised-films/promised-films.component';
 import { CurrentFilmsCardComponent } from './current-films-card/current-films-card.component';
+import { CurrentFilmsComponent } from './current-films/current-films.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CurrentFilmsCardComponent } from './current-films-card/current-films-ca
     FooterComponent,
     PromisedFilmsBallComponent,
     PromisedFilmsComponent,
-    CurrentFilmsCardComponent
+    CurrentFilmsCardComponent,
+    CurrentFilmsComponent
   ],
   imports: [
     BrowserModule,
