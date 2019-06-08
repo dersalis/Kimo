@@ -1,0 +1,50 @@
+@import "../../variables";
+
+.current_films_card {
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  height: 480px;
+  background: $panel_color;
+  border: 1px solid $border_color;
+  border-radius: 5px;
+  margin: 10px 10px;
+  color: $font_color;
+
+  transition: color 0.3s, border 0.3s;
+
+  img {
+    width: 100%;
+    border-bottom: 1px solid $border_color;
+    border-radius: 5px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .description {
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-top: -15px;
+
+      .separator {
+        margin: 0 5px;
+      }
+    }
+  }
+
+  &:hover {
+    border: 1px solid $color_selected;
+    color: white;
+  }
+}

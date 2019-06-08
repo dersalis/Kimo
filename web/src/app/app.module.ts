@@ -11,6 +11,9 @@ import { ContactComponent } from './contact/contact.component';
 import { PricelistComponent } from './pricelist/pricelist.component';
 import { FooterComponent } from './footer/footer.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { PromisedFilmsBallComponent } from './promised-films-ball/promised-films-ball.component';
+import { PromisedFilmsComponent } from './promised-films/promised-films.component';
+import { CurrentFilmsCardComponent } from './current-films-card/current-films-card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     CinemasComponent,
     ContactComponent,
     PricelistComponent,
-    FooterComponent
+    FooterComponent,
+    PromisedFilmsBallComponent,
+    PromisedFilmsComponent,
+    CurrentFilmsCardComponent
   ],
   imports: [
     BrowserModule,
