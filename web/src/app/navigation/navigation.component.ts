@@ -10,6 +10,10 @@ export class NavigationComponent implements OnInit {
   isLoged: boolean = false;
   userName: string = '';
 
+  login: string = '';
+  password: string = '';
+
+
   private authService: AuthService;
 
   constructor(authService: AuthService) {
@@ -17,8 +21,8 @@ export class NavigationComponent implements OnInit {
     this.isLoged = authService.isLoged;
     this.userName = authService.userName;
 
-    this.isLoged = true;
-    this.userName = "Damian";
+    // this.isLoged = true;
+    // this.userName = "Damian";
   }
 
   ngOnInit() {
@@ -28,5 +32,17 @@ export class NavigationComponent implements OnInit {
     this.authService.logoOut();
     this.isLoged = false;
     this.userName = '';
+  }
+
+  logIn_cancel(): void {
+    this.password = '';
+    this.login = '';
+  }
+
+  logIn_accept(): void {
+    this.authService.singIn(this.login, this.password);
+    this.isLoged = this.authService.isLoged;
+    this.userName = this.authService.userName;
+    this.logIn_cancel();
   }
 }

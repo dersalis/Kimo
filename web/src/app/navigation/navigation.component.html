@@ -20,7 +20,22 @@
   <div class="login">
       <span class="separator"></span>
       <span class="material-icons login_icon">account_circle</span>
-      <div class="login_text" *ngIf="!isLoged">Zaloguj</div>
+
+      <input type="checkbox" id="check_log_menu">
+      <label for="check_log_menu" id="not_loged" class="login_text" *ngIf="!isLoged">
+        Zaloguj
+        <span class="material-icons">keyboard_arrow_down</span>
+      </label>
+      <div class="log_menu">
+        <input type="text" placeholder="Login" [(ngModel)]="login">
+        <input type="text" placeholder="Hasło" [(ngModel)]="password">
+        <div class="buttons">
+          <label for="check_log_menu" class="cancel" (click)="logIn_cancel()">Anuluj</label>
+          <label for="check_log_menu" class="accept" (click)="logIn_accept()">Zaloguj</label>
+        </div>
+      </div>
+
+
       <input type="checkbox" id="check_user_menu">
       <label for="check_user_menu" id="loged" class="login_text" *ngIf="isLoged">
         {{userName}}

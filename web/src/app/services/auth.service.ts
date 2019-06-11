@@ -18,17 +18,21 @@ export class AuthService {
 
   userName: string = '';
   isLoged: boolean = false;
+  correct: boolean = false;
 
   constructor() { }
 
   singIn(login: string, password: string) {
-    var correct = false;
+    this.correct = false;
     users.forEach((user => {
-      if(!correct && login === user.login && password === user.login) {
-        correct = true;
-        this.userName = login;
-        this.isLoged = true;
+      if(this.correct === false) {
+        if(user.login === login && user.password === password) {
+          this.correct = true;
+          this.userName = login;
+          this.isLoged = true;
+        }
       }
+
     }));
   }
 

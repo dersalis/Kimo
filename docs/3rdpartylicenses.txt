@@ -278,6 +278,9 @@ MIT
 @angular/router
 MIT
 
+@angular/forms
+MIT
+
 angular-font-awesome
 MIT
 The MIT License
