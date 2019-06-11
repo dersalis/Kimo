@@ -20,6 +20,14 @@
   <div class="login">
       <span class="separator"></span>
       <span class="material-icons login_icon">account_circle</span>
-      <span class="login_text">Zaloguj</span>
+      <div class="login_text" *ngIf="!isLoged">Zaloguj</div>
+      <input type="checkbox" id="check_user_menu">
+      <label for="check_user_menu" id="loged" class="login_text" *ngIf="isLoged">
+        {{userName}}
+        <span class="material-icons">keyboard_arrow_down</span>
+      </label>
+      <div class="user_menu">
+        <label for="check_user_menu" class="menu_text" (click)="logOut()">Wyloguj</label>
+      </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-@import '../../variables';
+@import "../../variables";
 
 .navigation {
   height: 50px;
@@ -67,7 +67,7 @@
         transform: translate(50%, 0%);
         opacity: 0;
 
-        transition: transform 0.3s, opacity 0.3s, box-shadow .2s .2s;
+        transition: transform 0.3s, opacity 0.3s, box-shadow 0.2s 0.2s;
       }
 
       &.active {
@@ -93,7 +93,6 @@
       }
     }
   }
-
 
   .search {
     display: flex;
@@ -130,7 +129,7 @@
       font-size: 14px;
       color: $font_color;
 
-      transition: border-bottom 0.3s, width .3s;
+      transition: border-bottom 0.3s, width 0.3s;
 
       &:hover,
       &:focus {
@@ -140,6 +139,7 @@
     }
 
     .search_icon {
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -155,8 +155,8 @@
     }
   }
 
-
   .login {
+    position: relative;
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -187,11 +187,66 @@
       width: 100px;
       font-size: 14px;
 
-      transition: color .3s;
+      transition: color 0.3s;
 
       &:hover {
         // color: $color_selected;
         color: white;
+      }
+    }
+
+    .user_menu {
+      // display: none;
+      position: absolute;
+      left: 10px;
+      top: 52px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #1d1d1d;
+      border: 1px solid #222222;
+      height: 30px;
+      width: 110px;
+      z-index: 10;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      transform: scale(0);
+      transition: transform .2s;
+      box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
+
+      .menu_text {
+        font-size: 14px;
+        text-transform: uppercase;
+        transition: color .3s;
+
+        &:hover {
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    #loged {
+      .material-icons {
+        font-size: 16px;
+        margin-left: 3px;
+        transition: transform .2s;
+      }
+    }
+
+    #check_user_menu {
+      display: none;
+
+      &:checked {
+        & ~ .user_menu {
+          transform: scale(1);
+        }
+        & ~ #loged {
+          color: white;
+          .material-icons {
+            transform: rotate(180deg);
+          }
+        }
       }
     }
   }

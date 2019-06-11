@@ -15,6 +15,7 @@ import { PromisedFilmsBallComponent } from './promised-films-ball/promised-films
 import { PromisedFilmsComponent } from './promised-films/promised-films.component';
 import { CurrentFilmsCardComponent } from './current-films-card/current-films-card.component';
 import { CurrentFilmsComponent } from './current-films/current-films.component';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { CurrentFilmsComponent } from './current-films/current-films.component';
     AppRoutingModule,
     AngularFontAwesomeModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
