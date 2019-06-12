@@ -1,48 +1,65 @@
 <div class="navigation">
   <div class="logo">
     <div class="logo_image">
-        <i class="material-icons">local_movies</i>
+      <i class="material-icons">local_movies</i>
     </div>
     <div class="logo_name">Kimo</div>
   </div>
   <div class="menu">
-    <a class="menu_item" routerLink="/start" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Start</a>
-    <a class="menu_item" routerLink="/films" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Filmy</a>
-    <a class="menu_item" routerLink="/cinemas" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Kina</a>
-    <a class="menu_item" routerLink="/pricelist" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Cennik</a>
-    <a class="menu_item" routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Kontakt</a>
+    <a class="menu_item" routerLink="/start" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact:true}">Start</a>
+    <a class="menu_item" routerLink="/films" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact:true}">Filmy</a>
+    <a class="menu_item" routerLink="/cinemas" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact:true}">Kina</a>
+    <a class="menu_item" routerLink="/pricelist" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact:true}">Cennik</a>
+    <a class="menu_item" routerLink="/contact" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact:true}">Kontakt</a>
   </div>
   <div class="search">
-      <input class="search_check" id="search_check" type="checkbox">
-      <input class="search_input" type="text" placeholder="Szukaj...">
-      <label class="material-icons search_icon" for="search_check">search</label>
+    <input class="search_check" id="search_check" type="checkbox">
+    <input class="search_input" type="text" placeholder="Szukaj...">
+    <label class="material-icons search_icon" for="search_check">search</label>
   </div>
   <div class="login">
-      <span class="separator"></span>
-      <span class="material-icons login_icon">account_circle</span>
+    <span class="separator"></span>
+    <span class="material-icons login_icon">account_circle</span>
 
-      <input type="checkbox" id="check_log_menu">
-      <label for="check_log_menu" id="not_loged" class="login_text" *ngIf="!isLoged">
-        Zaloguj
-        <span class="material-icons">keyboard_arrow_down</span>
-      </label>
-      <div class="log_menu">
-        <input type="text" placeholder="Login" [(ngModel)]="login">
-        <input type="text" placeholder="Hasło" [(ngModel)]="password">
-        <div class="buttons">
-          <label for="check_log_menu" class="cancel" (click)="logIn_cancel()">Anuluj</label>
-          <label for="check_log_menu" class="accept" (click)="logIn_accept()">Zaloguj</label>
-        </div>
+    <input type="checkbox" id="check_log_menu">
+    <label for="check_log_menu" id="not_loged" class="login_text" *ngIf="!isLoged">
+      Zaloguj
+      <span class="material-icons">keyboard_arrow_down</span>
+    </label>
+    <div class="log_menu">
+      <input type="text" placeholder="Login" [(ngModel)]="login">
+      <input type="text" placeholder="Hasło" [(ngModel)]="password">
+      <div class="buttons">
+        <label for="check_log_menu" class="cancel" (click)="logIn_cancel()">Anuluj</label>
+        <label for="check_log_menu" class="accept" (click)="logIn_accept()">Zaloguj</label>
       </div>
+    </div>
 
 
-      <input type="checkbox" id="check_user_menu">
-      <label for="check_user_menu" id="loged" class="login_text" *ngIf="isLoged">
-        {{userName}}
-        <span class="material-icons">keyboard_arrow_down</span>
-      </label>
-      <div class="user_menu">
-        <label for="check_user_menu" class="menu_text" (click)="logOut()">Wyloguj</label>
-      </div>
+    <input type="checkbox" id="check_user_menu">
+    <label for="check_user_menu" id="loged" class="login_text" *ngIf="isLoged">
+      {{userName}}
+      <span class="material-icons">keyboard_arrow_down</span>
+    </label>
+    <div class="user_menu">
+      <label for="check_user_menu" class="menu_text" (click)="logOut()">Wyloguj</label>
+    </div>
+  </div>
+  <!-- <div [ngClass]="isLoginError ? ['error_win', 'show'] : ['error_win', 'hiden']"> -->
+  <div class="error_win" [class.show] = "isLoginError" [class.hiden] = "!isLoginError">
+    <div class="title">
+      Błąd logowania
+    </div>
+    <div class="description">
+      Błędny login lub hasło. Spóbuj ponownie!
+    </div>
+    <div class="close" (click)="hide_error_win()">
+        <span class="material-icons">clear</span>
+    </div>
   </div>
 </div>

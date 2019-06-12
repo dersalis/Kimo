@@ -9,6 +9,7 @@ import { AuthService } from '../services/auth.service';
 export class NavigationComponent implements OnInit {
   isLoged: boolean = false;
   userName: string = '';
+  isLoginError: boolean = false;
 
   login: string = '';
   password: string = '';
@@ -28,6 +29,7 @@ export class NavigationComponent implements OnInit {
   ngOnInit() {
   }
 
+
   logOut(): void {
     this.authService.logoOut();
     this.isLoged = false;
@@ -44,5 +46,13 @@ export class NavigationComponent implements OnInit {
     this.isLoged = this.authService.isLoged;
     this.userName = this.authService.userName;
     this.logIn_cancel();
+
+    if(this.isLoged === false) {
+      this.isLoginError = true;
+    }
+  }
+
+  hide_error_win() {
+    this.isLoginError = false;
   }
 }
