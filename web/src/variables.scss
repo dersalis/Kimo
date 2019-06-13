@@ -12,6 +12,22 @@ $color_selected: rgb(29, 153, 255);
 $border_color: #313131;
 $panel_color: #292929;
 
+
 @mixin general_margin {
   padding: 0 50px;
+}
+
+@mixin card {
+  background: $panel_color;
+  border: 1px solid $border_color;
+  border-radius: 5px;
+  margin: 10px 10px;
+  color: $font_color;
+  transition: color 0.3s, border 0.3s;
+
+  &:hover {
+    border: 1px solid $color_selected;
+    // box-shadow: inset 0px 0px 20px -2px rgba($color_selected ,0.75);
+    color: white;
+  }
 }

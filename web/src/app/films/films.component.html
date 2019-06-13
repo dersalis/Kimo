@@ -1,3 +1,44 @@
-<p>
-  films works!
+<p class="hd1">Kina i filmy w Twoim mieście
+  <i class="material-icons">location_city</i>
+  <span class="city">{{city}}</span>
 </p>
+
+<div class="navigator">
+  <div class="menu">
+    <div class="button" (click)="selectCity('Poznań')">
+      Poznań
+    </div>
+    <div class="button" (click)="selectCity('Szczecin')">
+      Szczecin
+    </div>
+    <div class="button" (click)="selectCity('Gdańsk')">
+      Gdańsk
+    </div>
+    <div class="button" (click)="selectCity('Warszawa')">
+      Warszawa
+    </div>
+    <div class="button" (click)="selectCity('Wrocław')">
+      Wrocław
+    </div>
+    <div class="button" (click)="selectCity('Kraków')">
+      Kraków
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="card">
+      <div class="poster">
+        <img src="https://media.multikino.pl/thumbnails/50/rc/OURDOEJC/eyJ0aHVtYm5haWwiOnsic2l6ZSI6WyIxMDAwMCIsIjEwMDAwIl0sIm1vZGUiOiJpbnNldCJ9fQ==/uploads/images/films_and_events/godzilla-pl_4c8665e69c.jpg" alt="">
+      </div>
+      <div class="description">
+
+      </div>
+    </div>
+    <div class="card">
+
+    </div>
+    <div class="card">
+
+    </div>
+  </div>
+</div>

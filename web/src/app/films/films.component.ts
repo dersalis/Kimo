@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilmsComponent implements OnInit {
 
+  public city: string = 'Poznań';
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  public selectCity(city: string): void {
+    this.city = city;
+
+  }
 }
