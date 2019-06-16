@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 const users: IUser[] = [
   {
@@ -20,7 +21,17 @@ export class AuthService {
   isLoged: boolean = false;
   correct: boolean = false;
 
-  constructor() { }
+  loginStateChange: Subject<boolean> = new Subject<boolean>();
+
+  constructor() {
+    this.loginStateChange.subscribe((value) => {
+      this.isLoged = value;
+  });
+  }
+
+  toggleLoginState(state) {
+    this.loginStateChange.next(state);
+}
 
   singIn(login: string, password: string) {
     this.correct = false;
@@ -29,7 +40,8 @@ export class AuthService {
         if(user.login === login && user.password === password) {
           this.correct = true;
           this.userName = login;
-          this.isLoged = true;
+          // this.isLoged = true;
+          this.toggleLoginState(true);
         }
       }
 
@@ -37,7 +49,8 @@ export class AuthService {
   }
 
   logoOut() {
-    this.isLoged = false;
+    // this.isLoged = false;
+    this.toggleLoginState(false);
   }
 }
 

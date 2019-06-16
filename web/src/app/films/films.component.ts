@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-films',
@@ -8,8 +9,18 @@ import { Component, OnInit } from '@angular/core';
 export class FilmsComponent implements OnInit {
 
   public city: string = 'Poznań';
+  isLoged: boolean = false;
 
-  constructor() { }
+  get isUserLoged(): boolean {
+    return this.authService.isLoged;
+}
+
+  private authService: AuthService;
+
+  constructor(authService: AuthService) {
+    this.authService = authService;
+    this.isLoged = this.authService.isLoged;
+  }
 
   ngOnInit() {
   }

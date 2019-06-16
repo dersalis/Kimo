@@ -31,3 +31,11 @@ $panel_color: #292929;
     color: white;
   }
 }
+
+@mixin content_horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 30px;
+}
