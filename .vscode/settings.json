@@ -1,0 +1,15 @@
+{
+    "sqltools.connections": [
+        {
+            "askForPassword": false,
+            "connectionTimeout": 30,
+            "database": "Dincks",
+            "dialect": "MSSQL",
+            "name": "DockerMSSql",
+            "password": "silVer81",
+            "port": 1433,
+            "server": "127.0.0.1",
+            "username": "sa"
+        }
+    ]
+}

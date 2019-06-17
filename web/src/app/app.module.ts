@@ -17,6 +17,7 @@ import { CurrentFilmsCardComponent } from './current-films-card/current-films-ca
 import { CurrentFilmsComponent } from './current-films/current-films.component';
 import { AuthService } from './services/auth.service';
 import { FormsModule} from '@angular/forms';
+import { CityCardComponent } from './city-card/city-card.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FormsModule} from '@angular/forms';
     PromisedFilmsBallComponent,
     PromisedFilmsComponent,
     CurrentFilmsCardComponent,
-    CurrentFilmsComponent
+    CurrentFilmsComponent,
+    CityCardComponent
   ],
   imports: [
     BrowserModule,
