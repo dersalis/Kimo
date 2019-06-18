@@ -27,39 +27,37 @@
 
   <div class="content">
 
-    <div class="card">
+    <div class="card" *ngFor="let film of films">
       <div class="poster">
         <img
-          src="https://media.multikino.pl/thumbnails/50/rc/OURDOEJC/eyJ0aHVtYm5haWwiOnsic2l6ZSI6WyIxMDAwMCIsIjEwMDAwIl0sIm1vZGUiOiJpbnNldCJ9fQ==/uploads/images/films_and_events/godzilla-pl_4c8665e69c.jpg"
+          src="{{film.poster}}"
           alt="">
       </div>
       <div class="description">
         <div class="title">
-          GODZILLA II: KRÓL POTWORÓW
+          {{film.title}}
         </div>
         <div class="type">
-          Gatunek: <span>Akcja</span>
+          Gatunek: <span>{{film.type}}</span>
         </div>
         <div class="time">
-          Czas: <span>130</span> minuty
+          Czas: <span>{{film.time}}</span> minuty
         </div>
         <div class="age">
-          Od lat: <span>Akcja</span>
+          Od lat: <span>{{film.age}}</span>
         </div>
         <div class="text">
-          Kolejna odsłona filmowego MonsterVerse, opowiada historię o bohaterskich czynach członków kryptozoologicznej
-          agencji Monarch, którzy muszą zmierzyć się z całą zgrają gigantycznych potworów.
+          {{film.description}}
         </div>
         <div class="buy_text">Kup bilet na film</div>
         <div class="notLoged" *ngIf="!isUserLoged">
           Musisz być zalogowany aby kupić bilet na film!
         </div>
         <div class="isLoged" *ngIf="isUserLoged">
-          <i class="material-icons">location_city</i>
+          <i class="material-icons">event_note</i>
           <select>
-            <option>Wybierz miasto</option>
-            <option>Poznań</option>
-            <option>Szczecin</option>
+            <option>Wybierz datę</option>
+            <option *ngFor="let date of film.date">{{date}}</option>
           </select>
           <i class="material-icons">confirmation_number</i>
           <a>Kup bilet</a>
@@ -67,51 +65,5 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="poster">
-        <img
-          src="https://media.multikino.pl/thumbnails/50/rc/OURDOEJC/eyJ0aHVtYm5haWwiOnsic2l6ZSI6WyIxMDAwMCIsIjEwMDAwIl0sIm1vZGUiOiJpbnNldCJ9fQ==/uploads/images/films_and_events/godzilla-pl_4c8665e69c.jpg"
-          alt="">
-      </div>
-      <div class="description">
-        <div class="title">
-          GODZILLA II: KRÓL POTWORÓW
-        </div>
-        <div class="type">
-          Gatunek: <span>Akcja</span>
-        </div>
-        <div class="time">
-          Czas: <span>130</span> minuty
-        </div>
-        <div class="age">
-          Od lat: <span>Akcja</span>
-        </div>
-        <div class="text">
-          Kolejna odsłona filmowego MonsterVerse, opowiada historię o bohaterskich czynach członków kryptozoologicznej
-          agencji Monarch, którzy muszą zmierzyć się z całą zgrają gigantycznych potworów.
-        </div>
-        <div class="buy_text">Kup bilet na film</div>
-        <div class="notLoged" *ngIf="!isUserLoged">
-          Musisz być zalogowany aby kupić bilet na film!
-        </div>
-        <div class="isLoged" *ngIf="isUserLoged">
-          <i class="material-icons">location_city</i>
-          <select>
-            <option>Wybierz miasto</option>
-            <option>Poznań</option>
-            <option>Szczecin</option>
-          </select>
-          <i class="material-icons">confirmation_number</i>
-          <a>Kup bilet</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-
-    </div>
-    <div class="card">
-
-    </div>
   </div>
 </div>

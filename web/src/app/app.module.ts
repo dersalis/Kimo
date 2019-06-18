@@ -18,6 +18,10 @@ import { CurrentFilmsComponent } from './current-films/current-films.component';
 import { AuthService } from './services/auth.service';
 import { FormsModule} from '@angular/forms';
 import { CityCardComponent } from './city-card/city-card.component';
+import { CitiesService } from './services/cities.service';
+import { HttpClientModule } from '@angular/common/http';
+import { FilmsNowService } from './services/films-now.service';
+import { FilmsPromService } from './services/films-prom.service';
 
 @NgModule({
   declarations: [
@@ -39,9 +43,15 @@ import { CityCardComponent } from './city-card/city-card.component';
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [AuthService],
+  providers: [
+    AuthService,
+    CitiesService,
+    FilmsNowService,
+    FilmsPromService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

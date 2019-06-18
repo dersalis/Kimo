@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "X-Men",
+    "type": "Science-Fiction",
+    "year": 2019,
+    "poster": "https://media.multikino.pl/thumbnails/50/rc/MTFCMUNG/eyJ0aHVtYm5haWwiOnsic2l6ZSI6WyIzMTkiLCI0NzciXSwibW9kZSI6Imluc2V0In19/uploads/images/films_and_events/mroczna-phoenix-pl2_3f4ab84c1c.jpg",
+    "cities": ["Poznań", "Szczecin", "Gdańsk", "Warszawa", "Wrocław", "Kraków"],
+    "time": 132,
+    "age": 13,
+    "description": "Kolejna odsłona filmowego MonsterVerse, opowiada historię o bohaterskich czynach członków kryptozoologicznej agencji Monarch, którzy muszą zmierzyć się z całą zgrają gigantycznych potworów.",
+    "date": ["02.07.2019 16:00", "02.07.2019 18:00", "02.07.2019 20:00", "03.07.2019 16:00", "03.07.2019 18:00", "03.07.2019 20:00"]
+  },
+  {
+    "id": 2,
+    "title": "Rocketman",
+    "type": "Biograficzny",
+    "year": 2019,
+    "poster": "https://media.multikino.pl/thumbnails/50/rc/MDY0NzBF/eyJ0aHVtYm5haWwiOnsic2l6ZSI6WyIxMDAwMCIsIjEwMDAwIl0sIm1vZGUiOiJpbnNldCJ9fQ==/uploads/images/films_and_events/rocketman-pl-1_958bdf6811.jpg",
+    "cities": ["Poznań", "Szczecin", "Gdańsk", "Warszawa", "Kraków"],
+    "time": 121,
+    "age": 15,
+    "description": "Taron Egerton jako Elton John! Niezwykły, odważny musical o życiu i przełomowych chwilach w karierze sir Eltona Johna, jednej z największych gwiazd popu wszech czasów.",
+    "date": ["01.07.2019 16:00", "01.07.2019 18:00", "01.07.2019 20:00", "02.07.2019 16:00", "02.07.2019 18:00", "02.07.2019 20:00"]
+  },
+  {
+    "id": 3,
+    "title": "DETEKTYW PIKACHU",
+    "type": "Familijny",
+    "year": 2019,
+    "poster": "https://media.multikino.pl/thumbnails/50/rc/MDgzNTg4/eyJ0aHVtYm5haWwiOnsic2l6ZSI6WyIxMDAwMCIsIjEwMDAwIl0sIm1vZGUiOiJpbnNldCJ9fQ==/uploads/images/films_and_events/pokemon-pl_b70d15dca6.jpg",
+    "cities": ["Poznań", "Szczecin", "Warszawa", "Kraków"],
+    "time": 104,
+    "age": 7,
+    "description": "Świat Pokémonów wkracza na duży ekran! W pierwszym przygodowym filmie o Pokémonach z udziałem aktorów, POKÉMON Detective Pikachu, Ryan Reynolds użycza głosu Pikachu, kultowej postaci globalnego hitu, jakim stał się Pokémon — jedna z najpopularniejszych na świecie.",
+    "date": ["03.07.2019 16:00", "03.07.2019 18:00", "03.07.2019 20:00", "04.07.2019 16:00", "04.07.2019 18:00", "04.07.2019 20:00"]
+  },
+  {
+    "id": 4,
+    "title": "SPIDER-MAN",
+    "type": "Akcja",
+    "year": 2019,
+    "poster": "https://media.multikino.pl/thumbnails/50/rc/ODJFRDRB/eyJ0aHVtYm5haWwiOnsic2l6ZSI6WyIxMDAwMCIsIjEwMDAwIl0sIm1vZGUiOiJpbnNldCJ9fQ==/uploads/images/films_and_events/spider-man-daleko-od-domu-pl_4280f9f175.jpg",
+    "cities": ["Szczecin", "Gdańsk", "Warszawa", "Kraków"],
+    "time": 135,
+    "age": 12,
+    "description": "Peter Parker powraca jako Spider-Man w nowym filmie „Spider-Man: Daleko od domu”. Nasz przyjaciel-superbohater z sąsiedztwa przyłącza się do swych najlepszych przyjaciół – Neda, MJ i reszty, by wspólnie wyruszyć na europejskie wakacje.",
+    "date": ["04.07.2019 16:00", "04.07.2019 18:00", "04.07.2019 20:00", "05.07.2019 16:00", "05.07.2019 18:00", "05.07.2019 20:00"]
+  },
+  {
+    "id": 5,
+    "title": "ALADYN",
+    "type": "Przygoda",
+    "year": 2019,
+    "poster": "https://media.multikino.pl/thumbnails/50/rc/QjE1QzdF/eyJ0aHVtYm5haWwiOnsic2l6ZSI6WyIxMDAwMCIsIjEwMDAwIl0sIm1vZGUiOiJpbnNldCJ9fQ==/uploads/images/films_and_events/aladyn-pl_19d4c36c0d.jpg",
+    "cities": ["Poznań", "Szczecin", "Gdańsk", "Wrocław"],
+    "time": 127,
+    "age": 12,
+    "description": "Guy Ritchie za kamerą? Nie będzie miejsca na nudę! Mistrz kina łotrzykowskiego („Porachunki”, „Przekręt”, „Sherlock Holmes”, „Kryptonim U.N.C.L.E.”) wziął na warsztat historię ulicznego rozrabiaki Aladyna (Mena Massoud), który przeżywa liczne przygody w fikcyjnym portowym mieście Agrabah.",
+    "date": ["03.07.2019 16:00", "03.07.2019 18:00", "03.07.2019 20:00", "04.07.2019 16:00", "04.07.2019 18:00", "04.07.2019 20:00"]
+  },
+  {
+    "id": 6,
+    "title": "JOHN WICK 3",
+    "type": "Thiller",
+    "year": 2019,
+    "poster": "https://media.multikino.pl/thumbnails/50/rc/NjY1Mjky/eyJ0aHVtYm5haWwiOnsic2l6ZSI6WyIxMDAwMCIsIjEwMDAwIl0sIm1vZGUiOiJpbnNldCJ9fQ==/uploads/images/films_and_events/john-wick-3-pl_e66ee15883.jpg",
+    "cities": ["Poznań", "Gdańsk", "Warszawa", "Kraków"],
+    "time": 130,
+    "age": 16,
+    "description": "Keanu Reeves powraca w towarzystwie dwóch laureatek Oscara Halle Berry i Anjeliki Huston, w pełnej akcji i czarnego humoru filmowej petardzie. Jeszcze więcej wrogów, międzynarodowa intryga i koń o zabójczych skłonnościach.",
+    "date": ["01.07.2019 16:00", "01.07.2019 18:00", "01.07.2019 20:00", "02.07.2019 16:00", "02.07.2019 18:00", "02.07.2019 20:00"]
+  },
+  {
+    "id": 7,
+    "title": "JOCKER",
+    "type": "Akcja",
+    "year": 2019,
+    "poster": "https://media.multikino.pl/thumbnails/50/rc/QUU4NkQ5/eyJ0aHVtYm5haWwiOnsic2l6ZSI6WyIyMDAiLCIxMDAwMCJdLCJtb2RlIjoiaW5zZXQifX0=/uploads/images/films_and_events/avengers-koniec-gry-pl_1d8be1db34.jpg",
+    "cities": ["Gdańsk", "Wrocław", "Kraków"],
+    "time": 120,
+    "age": 16,
+    "description": "Historia jednego z cieszących się najgorszą sławą superprzestępców uniwersum DC — Jokera. Przedstawiony przez Phillipsa obraz śledzi losy kultowego czarnego charakteru, człowieka zepchniętego na margines.",
+    "date": ["03.07.2019 16:00", "03.07.2019 18:00", "03.07.2019 20:00", "04.07.2019 16:00", "04.07.2019 18:00", "04.07.2019 20:00"]
+  }
+]

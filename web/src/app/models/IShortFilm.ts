@@ -4,4 +4,9 @@ export interface IShortFilm {
   poster: string;
   year: number;
   type: string;
+  cities: string[];
+  time: number;
+  age: number;
+  description: string;
+  date: string[];
 }

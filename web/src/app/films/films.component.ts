@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
+import { FilmsNowService } from '../services/films-now.service';
+import { IShortFilm } from '../models/IShortFilm';
 
 @Component({
   selector: 'app-films',
@@ -13,20 +15,26 @@ export class FilmsComponent implements OnInit {
 
   get isUserLoged(): boolean {
     return this.authService.isLoged;
-}
+  }
 
-  private authService: AuthService;
+  public allFilms: IShortFilm[] = [];
+  public films: IShortFilm[] = [];
 
-  constructor(authService: AuthService) {
+  public selectCity(city: string): void {
+    this.city = city;
+    this.films = this.allFilms.filter(f => f.cities.includes(city));
+  }
+
+  constructor(private authService: AuthService, private filmsNowService: FilmsNowService) {
     this.authService = authService;
     this.isLoged = this.authService.isLoged;
   }
 
   ngOnInit() {
+    this.filmsNowService.getFilms().subscribe(response => {
+      this.allFilms = response;
+      this.selectCity(this.city);
+    });
   }
 
-  public selectCity(city: string): void {
-    this.city = city;
-
-  }
 }

@@ -9,6 +9,14 @@ const users: IUser[] = [
   {
     login: 'magda',
     password: 'p@$$w0rd',
+  },
+  {
+    login: 'wojtek',
+    password: 'p@$$w0rd',
+  },
+  {
+    login: 'marcin',
+    password: 'p@$$w0rd',
   }
 ];
 
