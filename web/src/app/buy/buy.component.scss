@@ -1,0 +1,128 @@
+@import "../../variables";
+
+$box_size: 40px;
+
+.film {
+  display: flex;
+  font-size: 22px;
+  color: $font_color;
+  margin-top: -10px;
+
+  .material-icons {
+    font-size: 16px;
+    margin-top: 4px;
+    margin-left: 20px;
+    margin-right: 5px;
+    color: gray;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  .cinema_container {
+    display: inline-block;
+    .screen {
+      padding: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $panel_color;
+      border: 1px solid $border_color;
+      border-radius: 3px;
+      margin: 40px 40px 30px 80px;
+      font-size: 12px;
+      color: gray;
+      text-transform: uppercase;
+    }
+
+    .chers_container {
+      .row {
+        display: flex;
+        flex-direction: row;
+
+        .row_number {
+          padding: 2px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          height: $box_size;
+          width: $box_size;
+          color: gray;
+          margin: 5px;
+        }
+        .cher {
+          padding: 2px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          height: $box_size;
+          width: $box_size;
+          background: $panel_color;
+          border: 1px solid $border_color;
+          border-radius: 3px;
+          margin: 5px;
+          transition: color 0.3s, border 0.3s;
+
+          .material-icons {
+            color: $font_color;
+            font-size: 18px;
+            transition: color 0.3s;
+          }
+          .number {
+            font-size: 12px;
+            color: gray;
+            transition: color 0.3s;
+          }
+
+          &:hover {
+            border: 1px solid $color_selected;
+
+            .number {
+              color: white;
+            }
+            .material-icons {
+              color: white;
+            }
+          }
+
+          &.selected {
+            border: 1px solid greenyellow;
+          }
+        }
+      }
+    }
+  }
+
+  .sum {
+    padding: 20px;
+    color: $font_color;
+
+    .sum_title {
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    .cher_row, .sum_row, .price_row{
+      display: flex;
+      flex-direction: row;
+      margin: 10px 5px;
+
+      .material-icons {
+        font-size: 20px;
+        color: gray;
+        margin-top: 5px;
+      }
+      .count {
+        font-size: 26px;
+        margin: 0 5px;
+      }
+    }
+
+    .sum_row {
+      border-top: 1px solid gray;
+    }
+  }
+}

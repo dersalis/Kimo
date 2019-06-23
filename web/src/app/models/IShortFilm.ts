@@ -9,4 +9,5 @@ export interface IShortFilm {
   age: number;
   description: string;
   date: string[];
+  selectedDate: string;
 }

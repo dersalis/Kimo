@@ -5,6 +5,7 @@ import { FilmsComponent } from './films/films.component';
 import { CinemasComponent } from './cinemas/cinemas.component';
 import { PricelistComponent } from './pricelist/pricelist.component';
 import { ContactComponent } from './contact/contact.component';
+import { BuyComponent } from './buy/buy.component';
 
 const routes: Routes = [
   { path: 'start', component: StartComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'pricelist', component: PricelistComponent},
   { path: 'contact', component: ContactComponent},
   { path: '', redirectTo: 'start', pathMatch: 'full'},
+  { path: 'buy', component: BuyComponent}
 ];
 
 @NgModule({

@@ -22,6 +22,9 @@ import { CitiesService } from './services/cities.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FilmsNowService } from './services/films-now.service';
 import { FilmsPromService } from './services/films-prom.service';
+import { BuyComponent } from './buy/buy.component';
+import { BuyService } from './services/buy.service';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -37,20 +40,23 @@ import { FilmsPromService } from './services/films-prom.service';
     PromisedFilmsComponent,
     CurrentFilmsCardComponent,
     CurrentFilmsComponent,
-    CityCardComponent
+    CityCardComponent,
+    BuyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [
     AuthService,
     CitiesService,
     FilmsNowService,
-    FilmsPromService
+    FilmsPromService,
+    BuyService
   ],
   bootstrap: [AppComponent]
 })

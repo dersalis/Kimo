@@ -55,12 +55,12 @@
         </div>
         <div class="isLoged" *ngIf="isUserLoged">
           <i class="material-icons">event_note</i>
-          <select>
-            <option>Wybierz datę</option>
-            <option *ngFor="let date of film.date">{{date}}</option>
+          <select [(ngModel)]="film.selectedDate">
+            <!-- <option>Wybierz datę</!--> -->
+            <option *ngFor="let date of film.date" [ngValue]="date">{{date}}</option>
           </select>
           <i class="material-icons">confirmation_number</i>
-          <a>Kup bilet</a>
+          <a (click)="buyTicket(film.title, film.selectedDate)">Kup bilet</a>
         </div>
       </div>
     </div>

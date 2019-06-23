@@ -1,0 +1,36 @@
+<p class="hd1">Kup bilet</p>
+
+<div class="film">
+  {{title}}
+  <i class="material-icons">date_range</i>
+  {{date}}
+</div>
+<div class="container">
+  <div class="cinema_container">
+    <div class="screen">Ekran</div>
+    <div class="chers_container">
+      <div class="row" *ngFor="let row of cinema">
+        <div class="row_number">{{row.position}}</div>
+        <div class="cher" *ngFor="let cher of row.chers"  [class.selected]="cher.isSelected" (click)="selectCher(cher.id)">
+          <i class="material-icons">event_seat</i>
+          <div class="number">{{cher.position}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sum">
+    <div class="sum_title">Podsumowanie zakupu</div>
+    <div class="cher_row">
+        <i class="material-icons">event_seat</i>
+        <span class="count">{{sel_count}}</span>
+    </div>
+    <div class="price_row">
+        <i class="material-icons">euro_symbol</i>
+        <span class="count">{{price}} zł</span>
+    </div>
+    <div class="sum_row">
+        <i class="material-icons">receipt</i>
+        <span class="count">{{total_price}} zł</span>
+    </div>
+  </div>
+</div>

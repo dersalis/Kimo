@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { FilmsNowService } from '../services/films-now.service';
 import { IShortFilm } from '../models/IShortFilm';
+import { Router } from '@angular/router';
+import { BuyService } from '../services/buy.service';
 
 @Component({
   selector: 'app-films',
@@ -25,7 +27,10 @@ export class FilmsComponent implements OnInit {
     this.films = this.allFilms.filter(f => f.cities.includes(city));
   }
 
-  constructor(private authService: AuthService, private filmsNowService: FilmsNowService) {
+  constructor(private authService: AuthService,
+    private filmsNowService: FilmsNowService,
+    private router: Router,
+    private buyService: BuyService) {
     this.authService = authService;
     this.isLoged = this.authService.isLoged;
   }
@@ -37,4 +42,9 @@ export class FilmsComponent implements OnInit {
     });
   }
 
+  buyTicket(film: string, date: string): void {
+    this.buyService.title = film;
+    this.buyService.date = date;
+    this.router.navigate(['buy']);
+  }
 }

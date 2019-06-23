@@ -9,7 +9,8 @@
     "time": 132,
     "age": 13,
     "description": "Kolejna odsłona filmowego MonsterVerse, opowiada historię o bohaterskich czynach członków kryptozoologicznej agencji Monarch, którzy muszą zmierzyć się z całą zgrają gigantycznych potworów.",
-    "date": ["02.07.2019 16:00", "02.07.2019 18:00", "02.07.2019 20:00", "03.07.2019 16:00", "03.07.2019 18:00", "03.07.2019 20:00"]
+    "date": ["02.07.2019 16:00", "02.07.2019 18:00", "02.07.2019 20:00", "03.07.2019 16:00", "03.07.2019 18:00", "03.07.2019 20:00"],
+    "selectedDate": "02.07.2019 16:00"
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "time": 121,
     "age": 15,
     "description": "Taron Egerton jako Elton John! Niezwykły, odważny musical o życiu i przełomowych chwilach w karierze sir Eltona Johna, jednej z największych gwiazd popu wszech czasów.",
-    "date": ["01.07.2019 16:00", "01.07.2019 18:00", "01.07.2019 20:00", "02.07.2019 16:00", "02.07.2019 18:00", "02.07.2019 20:00"]
+    "date": ["01.07.2019 16:00", "01.07.2019 18:00", "01.07.2019 20:00", "02.07.2019 16:00", "02.07.2019 18:00", "02.07.2019 20:00"],
+    "selectedDate": "01.07.2019 16:00"
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "time": 104,
     "age": 7,
     "description": "Świat Pokémonów wkracza na duży ekran! W pierwszym przygodowym filmie o Pokémonach z udziałem aktorów, POKÉMON Detective Pikachu, Ryan Reynolds użycza głosu Pikachu, kultowej postaci globalnego hitu, jakim stał się Pokémon — jedna z najpopularniejszych na świecie.",
-    "date": ["03.07.2019 16:00", "03.07.2019 18:00", "03.07.2019 20:00", "04.07.2019 16:00", "04.07.2019 18:00", "04.07.2019 20:00"]
+    "date": ["03.07.2019 16:00", "03.07.2019 18:00", "03.07.2019 20:00", "04.07.2019 16:00", "04.07.2019 18:00", "04.07.2019 20:00"],
+    "selectedDate": "03.07.2019 16:00"
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "time": 135,
     "age": 12,
     "description": "Peter Parker powraca jako Spider-Man w nowym filmie „Spider-Man: Daleko od domu”. Nasz przyjaciel-superbohater z sąsiedztwa przyłącza się do swych najlepszych przyjaciół – Neda, MJ i reszty, by wspólnie wyruszyć na europejskie wakacje.",
-    "date": ["04.07.2019 16:00", "04.07.2019 18:00", "04.07.2019 20:00", "05.07.2019 16:00", "05.07.2019 18:00", "05.07.2019 20:00"]
+    "date": ["04.07.2019 16:00", "04.07.2019 18:00", "04.07.2019 20:00", "05.07.2019 16:00", "05.07.2019 18:00", "05.07.2019 20:00"],
+    "selectedDate": "04.07.2019 16:00"
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "time": 127,
     "age": 12,
     "description": "Guy Ritchie za kamerą? Nie będzie miejsca na nudę! Mistrz kina łotrzykowskiego („Porachunki”, „Przekręt”, „Sherlock Holmes”, „Kryptonim U.N.C.L.E.”) wziął na warsztat historię ulicznego rozrabiaki Aladyna (Mena Massoud), który przeżywa liczne przygody w fikcyjnym portowym mieście Agrabah.",
-    "date": ["03.07.2019 16:00", "03.07.2019 18:00", "03.07.2019 20:00", "04.07.2019 16:00", "04.07.2019 18:00", "04.07.2019 20:00"]
+    "date": ["03.07.2019 16:00", "03.07.2019 18:00", "03.07.2019 20:00", "04.07.2019 16:00", "04.07.2019 18:00", "04.07.2019 20:00"],
+    "selectedDate": "03.07.2019 16:00"
   },
   {
     "id": 6,
@@ -69,18 +74,20 @@
     "time": 130,
     "age": 16,
     "description": "Keanu Reeves powraca w towarzystwie dwóch laureatek Oscara Halle Berry i Anjeliki Huston, w pełnej akcji i czarnego humoru filmowej petardzie. Jeszcze więcej wrogów, międzynarodowa intryga i koń o zabójczych skłonnościach.",
-    "date": ["01.07.2019 16:00", "01.07.2019 18:00", "01.07.2019 20:00", "02.07.2019 16:00", "02.07.2019 18:00", "02.07.2019 20:00"]
+    "date": ["01.07.2019 16:00", "01.07.2019 18:00", "01.07.2019 20:00", "02.07.2019 16:00", "02.07.2019 18:00", "02.07.2019 20:00"],
+    "selectedDate": "01.07.2019 16:00"
   },
   {
     "id": 7,
     "title": "JOCKER",
     "type": "Akcja",
     "year": 2019,
-    "poster": "https://media.multikino.pl/thumbnails/50/rc/QUU4NkQ5/eyJ0aHVtYm5haWwiOnsic2l6ZSI6WyIyMDAiLCIxMDAwMCJdLCJtb2RlIjoiaW5zZXQifX0=/uploads/images/films_and_events/avengers-koniec-gry-pl_1d8be1db34.jpg",
+    "poster": "https://media.multikino.pl/thumbnails/50/rc/NjUxMkI3/eyJ0aHVtYm5haWwiOnsic2l6ZSI6WyIxMDAwMCIsIjEwMDAwIl0sIm1vZGUiOiJpbnNldCJ9fQ==/uploads/images/films_and_events/joker-pl_19c68e9e97.jpg",
     "cities": ["Gdańsk", "Wrocław", "Kraków"],
     "time": 120,
     "age": 16,
     "description": "Historia jednego z cieszących się najgorszą sławą superprzestępców uniwersum DC — Jokera. Przedstawiony przez Phillipsa obraz śledzi losy kultowego czarnego charakteru, człowieka zepchniętego na margines.",
-    "date": ["03.07.2019 16:00", "03.07.2019 18:00", "03.07.2019 20:00", "04.07.2019 16:00", "04.07.2019 18:00", "04.07.2019 20:00"]
+    "date": ["03.07.2019 16:00", "03.07.2019 18:00", "03.07.2019 20:00", "04.07.2019 16:00", "04.07.2019 18:00", "04.07.2019 20:00"],
+    "selectedDate": "03.07.2019 16:00"
   }
 ]
