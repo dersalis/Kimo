@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/damianruta/WORKSPACE/Exer/Kimo.Api/Kimo.Api.csproj",
+      "projectUniqueName": "/Users/damianruta/WORKSPACE/Exer/Kimo/api/Kimo.Api.csproj",
       "projectName": "Kimo.Api",
-      "projectPath": "/Users/damianruta/WORKSPACE/Exer/Kimo.Api/Kimo.Api.csproj",
+      "projectPath": "/Users/damianruta/WORKSPACE/Exer/Kimo/api/Kimo.Api.csproj",
       "packagesPath": "/Users/damianruta/.nuget/packages/",
-      "outputPath": "/Users/damianruta/WORKSPACE/Exer/Kimo.Api/obj/",
+      "outputPath": "/Users/damianruta/WORKSPACE/Exer/Kimo/api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/damianruta/.nuget/NuGet/NuGet.Config"
