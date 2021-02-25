@@ -58,3 +58,5 @@
 /Users/damianruta/WORKSPACE/Exer/Kimo/api/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
 /Users/damianruta/WORKSPACE/Exer/Kimo/api/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/damianruta/WORKSPACE/Exer/Kimo/api/obj/Debug/netcoreapp3.1/Kimo.Api.csproj.CopyComplete
+/Users/damianruta/WORKSPACE/Exer/Kimo/api/bin/Debug/netcoreapp3.1/Humanizer.dll
+/Users/damianruta/WORKSPACE/Exer/Kimo/api/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll

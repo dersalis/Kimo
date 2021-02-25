@@ -28,6 +28,11 @@ namespace Kimo.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            // Obsługa xml
+            // services.AddMvc().AddXmlSerializerFormatters();
+
+            // Connection string
             services.AddDbContext<CinemaDbContext>(option => option.UseSqlServer(@"Data Source=localhost;Initial Catalog=Cinema;User ID=sa;Password=galeDo@03;"));
         }
 
