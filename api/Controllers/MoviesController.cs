@@ -1,3 +1,5 @@
+using System.IO;
+using System;
 using System.Collections.Generic;
 using api.Data;
 using api.Models;
@@ -40,9 +42,30 @@ namespace api.Controllers
 
 
         // POST api/movies
+        // [HttpPost]
+        // public IActionResult Post([FromBody] Movie movie)
+        // {
+        //     _dbContext.Movies.Add(movie);
+        //     _dbContext.SaveChanges();
+
+        //     return StatusCode(StatusCodes.Status201Created);
+        // }
+
+
+        // POST api/movies
         [HttpPost]
-        public IActionResult Post([FromBody] Movie movie)
+        public IActionResult Post([FromForm] Movie movie)
         {
+            var guid = new Guid();
+            var filePath = Path.Combine("wwwroot", guid + ".jpg");
+
+            if(movie.Image != null) {
+                var fileStream = new FileStream(filePath, FileMode.Create);
+                movie.Image.CopyTo(fileStream);
+            }
+            
+            movie.ImageUrl = filePath.Remove(0, 7);
+
             _dbContext.Movies.Add(movie);
             _dbContext.SaveChanges();
 
@@ -52,13 +75,23 @@ namespace api.Controllers
 
         // PUT api/movies/3
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Movie movie)
+        public IActionResult Put(int id, [FromForm] Movie movie)
         {
             var movieToPut = _dbContext.Movies.Find(id);
             if(movieToPut == null) 
             {
                 return NotFound($"Brak rekordu o id {id}");
             }
+
+            var guid = new Guid();
+            var filePath = Path.Combine("wwwroot", guid + ".jpg");
+
+            if(movie.Image != null) {
+                var fileStream = new FileStream(filePath, FileMode.Create);
+                movie.Image.CopyTo(fileStream);
+                movieToPut.ImageUrl = filePath.Remove(0, 7);
+            }
+
             movieToPut.Name = movie.Name;
             movieToPut.Language = movie.Language;
             movieToPut.Rating = movie.Rating;

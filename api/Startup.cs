@@ -44,6 +44,8 @@ namespace Kimo.Api
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles(); // TODO: Do pobierania plików
+
             app.UseHttpsRedirection();
 
             dbContext.Database.EnsureCreated();
