@@ -22,6 +22,9 @@ namespace api.Models
         public string Genre { get; set; }
         public string TrailorUrl { get; set; }
         public string ImageUrl { get; set; }
+        public decimal TicketPrice { get; set; }
+        
+        
         
         [NotMapped]
         public IFormFile Image { get; set; }
